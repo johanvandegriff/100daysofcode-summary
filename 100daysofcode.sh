@@ -1,13 +1,13 @@
 #100daysofcode Day 100:
-#sh #obfuscated
-set `head -1 $0|cut -c2-` johanv/ fosstodon.org/ 100.html \< \> embed iframe script
-u=$5@$4tagged/$1;p=;c=2;i=1
-echo $7h1$8#$1 $2 $3$7/h1$8>$6
-while [ $c != 1 ]||[ $i -lt 3 ];do
-s=`curl -sL $u`
-p=$p\ `echo "$s"|grep $5@$4[0-9]|cut -d\" -f6`
-s=`echo "$s"|grep load-m|cut -d\" -f4`
-c=`echo "$s"|wc -l`;u=`echo "$s"|tail -1`
-i=$((i+1));done;for l in $p;do
-echo $7$10 height=600 src=$l/$9$8$7/$10$8$7$11 src=$5$9.js$8$7/$11$8
+#obfuscated #sh #script!🤔🐚📜
+set `head -1 $0|cut -c2-` fosstodon.org/ johanv/ 100.html \< iframe \> embed script
+q=$4@$5tagged/$1;v=echo;b=;f=2;z=1
+$v "$7pre$9`cat $0`$7/pre$9$7$11 src=$4$10.js$9$7/$11$9">$6
+while [ $f != 1 ]||[ $z -lt 3 ];do
+q=`curl -sL $q`
+b=$b\ `$v "$q"|grep $4@$5[0-9]|cut -d\" -f6`
+q=`$v "$q"|grep ad-m|cut -d\" -f4`
+f=`$v "$q"|wc -l`;q=`$v "$q"|tail -1`
+z=$((z+1));done;for l in $b;do
+$v $7$8 height=650 src=$l/$10$9$7/$8$9
 done|uniq>>$6;xdg-open $6
